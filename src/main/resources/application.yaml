@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: rag
+  ai:
+    ollama:
+      base-url: http://localhost:11434
+      chat:
+        model: qwen2.5:3b
+      embedding:
+        model: nomic-embed-text
+  servlet:
+    multipart:
+      max-file-size: 20MB
+      max-request-size: 20MB
